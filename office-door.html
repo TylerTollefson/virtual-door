@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>User Office Door</title>
+
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="gridstack.css"/>
+    <link rel="stylesheet" href="https://cdn.webix.com/edge/webix.css" type="text/css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="door.css"/>
+
+    <script src="https://cdn.webix.com/edge/webix.js" type="text/javascript"></script>
+    <script src="jquery.min.js"></script>
+    <script src="jquery-ui.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="lodash.min.js"></script>
+    <script src="gridstack.js"></script>
+    <script src="gridstack.jQueryUI.js"></script>
+
+</head>
+<body>
+    <header>
+        <button class="hamburger">&#9776;</button>
+        <button class="cross">&#735;</button>
+    </header>
+
+    <div class="menu">
+        <ul>
+            <li><a id="add-widget" href="#">Add Widget</a></li>
+            <li><a id="save-grid" href="#">Save Grid</a></li>
+            <li><a id="load-grid" href="#">Load Grid</a></li>
+            <li><a id="clear-grid" href="#">Clear Grid</a></li>
+            <li><a id="disable-grid" href="#">Disable Grid</a></li>
+            <li><a id="enable-grid" href="#">Enable Grid</a></li>
+        </ul>
+    </div>
+    <div id = "door-owner">Dr Doerry's Office Door</div>
+
+    <br/>
+
+    <div class="grid-stack">
+    </div>
+
+    <hr/>
+
+    <textarea id="saved-data" cols="100" rows="20" readonly="readonly"></textarea>
+    <script src="widgets.js"></script>
+    <script src = "page_functions.js"></script>
+
+</body>
+</html>
