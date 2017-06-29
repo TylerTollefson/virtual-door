@@ -10,16 +10,7 @@ Hello and welcome to the Virtual Door project!
 
 * Current Version:
 
-    V 0.0
-
-### How is this repository structured? ###
-* The Virtual Door Repository is split into 3 branches:
-
-    1) The Master branch. This is where running, deployment ready code is to remain. **THIS SHOULD NOT BE MODIFIED WITHOUT APPROVAL**
-
-    2) The Front End UI branch. This is the work in progress branch for the user interface of the Virtual Door page. Modifications can be freely made here, as well as other branches can be created for future UI features and tests.
-
-    3) The Backend/Application-Layer branch. This branch is for any and all modifications to the backend/application for the Virtual Door project. Modifications can be freely made here as well, and more branches can be split for future features and tests.
+    V 1.0
 
 ### How do I get set up? ###
 
@@ -92,8 +83,3 @@ Hello and welcome to the Virtual Door project!
 			/js ***JAVASCRIPT FILES GO HERE***
 			/css ***CSS FILES GO HERE***
 			/images ***IMAGE FILES GO HERE***
-
-### Have a problem with something? ###
-* Communication:
-
-    Hop on Discord and mention the issue in the #repo chat-room!
