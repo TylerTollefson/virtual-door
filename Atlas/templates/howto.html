@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block title %} How To {% endblock %}
+
+{% block content %}
+<center><h2> How to Use the Office Door </h2></center>
+<h3>To add widgets to your door:</h3>
+<ol>
+<li>Click on the "Door Options" navbar element on the "Your Door" page.</li>
+<li>The widget select window will drop down from the top.</li>
+<li>Select the widget you want to put on the page.</li>
+<li>Click "Save Layout" under "Door Options" in the navbar to save your door's layout.</li>
+</ol>
+<p>To remove a widget from your door, click this icon <i class="fa fa-times" aria-hidden="true"></i> and click "Save Layout" under "Door Options" in the navbar.</p>
+
+<i class="fa fa-calendar" aria-hidden="true"></i> This is the calendar widget.</br>
+<i class="fa fa-pencil-square-o" aria-hidden="true"></i> This is the sticky note widget.</br>
+<i class="fa fa-picture-o" aria-hidden="true"></i> This is the picture widget. </br>
+<i class="fa fa-envelope" aria-hidden="true"></i> This is the notification widget.</br>
+<p>Once a widget is on the page you can drag it to where you want it. </br>
+The widget can also be resized to a custom size.</br>
+To save your current layout once you have widgets on your door, go into door options and then click "save layout". </br>
+If you don't save your layout, the widgets you added will not be shown on your page the next time you visit.</br>
+To add/edit content in widgets look for either a <i class="fa fa-plus" aria-hidden="true"></i> or an <i class="fa fa-pencil-square-o" aria-hidden="true"></i>, once clicked pop ups will appear and allow you to edit the widget's content</br>
+Widgets can be removed from pages by clicking the <i class="fa fa-times" aria-hidden="true"></i> icon in their right corner, once a widget/multiple widgets have been removed <b>you must save the layout</b>. </br>
+<h4 class="text-center">Reminder: You must always save your layout after moving or resizing widgets!</h4></br>
+For more information on specific widgets, visit the <a href="{% url 'widgetinfo' %}">Widget Info page</a></p>
+
+{% endblock %}

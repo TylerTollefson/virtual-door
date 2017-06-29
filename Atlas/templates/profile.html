@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block title %} Your Profile {% endblock %}
+{% block style %}
+h4 {
+    color: #9ca6ac; 
+    font-family: 'Lucida Sans', Arial, sans-serif;
+}
+{% endblock %}
+{% block nav_profile %}active{% endblock %}
+{% block content %}
+{% if profile == "None" %}
+<center><h2> Create a Profile </h2>
+<p>Use the navigation bar at the top to create a profile or click <a href="{% url 'createprofile' %}">here</a>.</center>
+{% else %}
+	<center><h2> Your Current Profile Information </h2></center>
+    <div style="margin-left:auto; margin-right:auto; max-width: 500px;">
+	<h4><strong>Your First Name</strong></h4>
+	<p class="text-center">{{profile.firstname}}</p>
+
+	<h4><strong>Your Last Name</strong></h4>
+	<p class="text-center">{{profile.lastname}}</p>
+
+	<h4><strong>Your Door URL</strong></h4>
+	<p class="text-center"><a href="{% url 'door' profile.doorurl %}">{{profile.doorurl}}</a></p>
+    
+	<h4><strong>Your Background Image</strong></h4>
+	<p class="text-center"><a href="..{{ profile.bgimage|cut:'atlas' }}"><img src="{{profile.bgimage|cut:'atlas'}}"/ style="height: auto; width: auto; max-width: 100px; max-height: 100px;"></a></p>
+    <p class="text-center">The above image is not to scale.  Click the image or <a href="..{{ profile.bgimage|cut:'atlas' }}">here</a> to view the full resolution.</p>
+    <p class="text-center">Image is set to {% if profile.repeat %}repeat (tiling the image in the browser window){% else %}not repeat (stretching the image to fit the browser window){% endif %}.</p>
+    </div>
+{% endif %}
+{% endblock %}

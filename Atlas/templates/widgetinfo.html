@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% block title %} How To {% endblock %}
+
+{% block content %}
+<center><h2> How to Use the Office Door </h2></center>
+<h3>To add widgets to your door:</h3>
+<ol>
+<li>Click on the "Door Options" navbar element on the "Your Door" page.</li>
+<li>The widget select window will drop down from the top.</li>
+<li>Select the widget you want to put on the page.</li>
+<li>Click "Save Layout" under "Door Options" in the navbar to save your door's layout.</li>
+</ol>
+<p>To remove a widget from your door, click this icon <i class="fa fa-times" aria-hidden="true"></i> and click "Save Layout" under "Door Options" in the navbar.</i>
+
+<div class="bs-callout bs-callout-danger">
+<h3 class="text-center"><i class="fa fa-warning" aria-hidden="true"></i><strong> Warning </strong><i class="fa fa-warning" aria-hidden="true"></i></h3>
+Deleting any widget on your page will delete any associated data with the widget.  This includes calendar events, pictures, sticky note text, and notification subscriptions to your door if you delete the corresponding widget!
+</div>
+<h3><i class="fa fa-calendar" aria-hidden="true"></i> This is the calendar widget.</h3>
+<p>Once the calendar widget is added to the page and the layout is saved, you can start adding events to it.</br>
+	To add an event click the <i class="fa fa-plus" aria-hidden="true"></i> icon. Enter a title for the event, the date of the event, and the time.</br>
+	Once you click submit the calendar will update with the new event.</br>
+	To delete an event click the <i class="fa fa-minus" aria-hidden="true"></i> icon. Make sure you select the event you want to delete then click the minus icon or it will not delete.</br>
+	To edit an event, click the <i class="fa fa-pencil-square-o" aria-hidden="true"></i> icon with an event selected. A popup will appear where you will enter the new event name, date and time. Then click "Edit Event" to update the event. 
+</p>
+
+<h3><i class="fa fa-pencil-square-o" aria-hidden="true"></i> This is the sticky note widget.</h3>
+	<p>To edit the content of the sticky note click the <i class="fa fa-pencil-square-o" aria-hidden="true"></i> icon.</br> 
+	A popup will appear where you can enter the new text, then click Update to update the text in the widget.</p>
+
+<h3><i class="fa fa-picture-o" aria-hidden="true"></i> This is the picture widget.</h3>
+<p>To edit the content of the picture widget, click the <i class="fa fa-picture-o" aria-hidden="true"></i> icon.</br> 
+	A popup will appear and you will need to click "Upload Image", and select an image from your computer.</br>
+	Once you have selected an image and uploaded it you will need to click "Refresh Image", for it to appear in the widget.</p>
+
+<h3><i class="fa fa-envelope" aria-hidden="true"></i> This is the notification widget.</h3>
+	<p>The notifications widget needs to be on your door page to serve notifications.</br>
+		The widget will send notifications to users who want updates for your door by pressing the <i class="fa fa-envelope" aria-hidden="true"></i> icon in the widget</i>.</br>
+		If you are a guest, once you click "Subscribe", you will receive a confirmation email that you will have to address to get update notifications.</p>
+{% endblock %}

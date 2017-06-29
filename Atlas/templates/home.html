@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block nav_home %}active{% endblock %}
+{% block content %}
+ <div>
+ <h2 class="text-center">The Virtual Office Door</h2>
+
+ 	{% if user and not user.is_anonymous %}
+    
+       <p class="text-center">Hello {{ user.get_full_name|default:user.username }}!</p>
+       <p class="text-center">Use the links in the navbar to navigate the website.</p>
+       
+   {% else %}
+   
+       <p class="text-center">Welcome to the Virtual Office Door website! You can get started by signing in above.</p>
+       
+   {% endif %}
+ </div>
+{% endblock %}
